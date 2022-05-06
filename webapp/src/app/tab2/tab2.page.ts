@@ -21,22 +21,22 @@ export class Tab2Page {
   current_style: number = 0;
   styles = [
     {
-      src: "../../assets/styles/picasso.jpg",
+      src: "assets/styles/picasso.jpg",
       title: "Picasso",
       subtitle: "The Weeping Woman",
     },
     {
-      src : "../../assets/styles/monet.webp",
+      src : "assets/styles/monet.webp",
       title:"Monet",
       subtitle : "Self-portrait in his Atelier"
     },
     {
-      src : "../../assets/styles/matisse.jpeg",
+      src : "assets/styles/matisse.jpeg",
       title:"Matisse",
       subtitle : "La Raie Verte"
     },
     {
-      src : "../../assets/styles/vangogh.webp",
+      src : "assets/styles/vangogh.webp",
       title:"Vincent van Gogh",
       subtitle : "Autoportrait au chapeau de feutre"
     }

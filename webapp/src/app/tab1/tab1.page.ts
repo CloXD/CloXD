@@ -14,7 +14,7 @@ export class Tab1Page {
   skills : Skill[] =[
     {
       avatar:
-      "../../assets/Tux.png",
+      "assets/Tux.png",
       text :'My passion for the penguin started when I was 12, thanks to my brother. Solving system related issues had always been a nice challenge, especially at the begin, when to install an Arch Linux distro, you almost needed to be a rocket scientist!',
       title : 'Linux',
       value: 85,
@@ -22,7 +22,7 @@ export class Tab1Page {
     },
     {
       avatar:
-      "../../assets/java.png",
+      "assets/java.png",
       text :'Java was my first OOP language. I learned it during my work experience @IMGT. It has been a while since I don\'t touch any code in Java, but I liked its solid community and versatility.',
       title : 'Java',
       value: 60,
@@ -30,7 +30,7 @@ export class Tab1Page {
     },
     {
       avatar:
-      "../../assets/cpp.png",
+      "assets/cpp.png",
       text :'I learnt C++ for the project iMOKA: all the core part is written with that. It is fast, reliable and allows OOP. I loved the easy parallelization powered by OpenMP and I also enjoyed using the Machine Learning library MLPack.',
       title : 'C++',
       value: 93,
@@ -38,7 +38,7 @@ export class Tab1Page {
     },
     {
       avatar:
-      "../../assets/python.png",
+      "assets/python.png",
       text :'Python was the first program language that I learnt, It was the one that introduced me to the wonderful world of programming. I started using it during my master and I never stopped. All of my ML and AI projects are written in Python using the libraries Tensorflow, scikit-learn, pandas and numpy.',
       title : 'Python',
       value: 95,
@@ -46,7 +46,7 @@ export class Tab1Page {
     },
     {
       avatar:
-      "../../assets/angular.png",
+      "assets/angular.png",
       text :'My second experience with Front End development was for the creation of the GUI of iMOKA. I used Electron for the BE and Angular for the Front End. Before I used some plain JS for the creation of websites, like the <a href="https://edcbs2.umontpellier.fr" target="_blank">website for my doctoral school</a>, but learning this amazing framework opened a new world for me! Since then, I\'m using it regularly for all my projects ( IRBase and the ongoing PCaProfiler) ',
       title : 'Angular',
       value: 87,
@@ -54,7 +54,7 @@ export class Tab1Page {
     },
     {
       avatar:
-      "../../assets/node.png",
+      "assets/node.png",
       text :'My first experience with Back End development was for the creation of the GUI of iMOKA. I used Electron for the BE and I found it very flexible and with a strong community. Subsequently, I used Express for the development of web applications (IRBase and the ongoing PCaProfiler), and the richness of libraries and flexibility of the PL never let me down.',
       title : 'Node',
       value: 90,
@@ -62,42 +62,42 @@ export class Tab1Page {
     },
     {
       avatar:
-      "../../assets/docker.png",
+      "assets/docker.png",
       text :'I think that containers and Singualrity images are a great asset for any scientist: the increased level of reproducibility that those technologies allow should be a standard practice of any researcher. I create docker images for all my projects and I currently use them also for the development stage!',
       title : 'Docker',
       value: 70,
       openModal : false
     },{
       avatar:
-      "../../assets/git.png",
+      "assets/git.png",
       text :'All my projects are on GitHub ( in private if they are not published, sorry! ) and I think that this good practice should be taught during any IT related course, Bioinformatics included. The safety that I feel after pushing the code doesn\'t have a price!',
       title : 'Git',
       value: 74,
       openModal : false
     },{
       avatar:
-      "../../assets/algo.png",
+      "assets/algo.png",
       text :'I have been studying and developing algorithms and efficient data structures for five years. The thrill to compare different solutions for a complex task, creating new ones or adapting the most suitable is what got me so involved in software development.',
       title : 'Algorithms and DS',
       value: 79,
       openModal : false
     },{
       avatar:
-      "../../assets/sql.png",
+      "assets/sql.png",
       text :'Since my first job @IMGT, working with databases was a must. There, I learnt a lot about this field and the first approach with ORM using JPA. I recently learnt how to use Sequelize, an ORM for Node and TypeScript, and I really like it!',
       title : 'SQL and ORM',
       value: 75,
       openModal : false
     },{
       avatar:
-      "../../assets/R.jpeg",
+      "assets/R.jpeg",
       text :'I have been using R since my Master\'s in Bioinformatics and It\'s my first choice when I have to do more classical bioinformatical analysis. It has a huge community and thousands of libraries. I have never created a tool in R and honestly, If I have to, I would rather write it in Python or C/C++ and then write a wrapper for it.',
       title : 'R',
       value: 91,
       openModal : false
     },{
       avatar:
-      "../../assets/tf.png",
+      "assets/tf.png",
       text :'A well trained model can not only do tasks that a human would do in more time and less efficiently, but also find new patterns and identify novel logic! I have been studying ML and AI models since my Master\'s, I have been applying them in almost all my works and I have also been reviewing scientific papers related to this amazing field. Simply, my real passion!',
       title : 'ML and AI',
       value: 95,
@@ -119,14 +119,14 @@ export class Tab1Page {
       title: `<strong>IRFinder-S</strong>: a new version of the widely used software for the detection of intron retention events.`,
       href: "https://github.com/RitchieLabIGH/IRFinder",
       avatar:
-      "../../assets/irfinder.png",
+      "assets/irfinder.png",
         text : "My second PhD project. Includes a CNN based filter to reduce the false positive IR based on image-like features."
     },
     {
       title: `<strong>IRBase</strong>: Intron retention database, hosted at IGH of Montpellier. (currently offline due to administrative issues)`,
       href: "https://irbase.igh.cnrs.fr/",
       avatar:
-        "../../assets/IRbase_bw.png",
+        "assets/IRbase_bw.png",
         text : "A web application to visualize IR events and compare them between different samples."
     },
     

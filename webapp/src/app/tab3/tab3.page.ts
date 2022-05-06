@@ -10,21 +10,21 @@ export class Tab3Page {
     {
       name: "Ionic Framework",
       url : "https://ionicframework.com/",
-      avatar : "../../assets/ionic.png"
+      avatar : "assets/ionic.png"
     },
     {
       name: "Angular",
       url : "https://ionicframework.com/",
-      avatar : "../../assets/angular.png"
+      avatar : "assets/angular.png"
     },
     {
       name: "TF Magenta/image",
       url : "https://www.npmjs.com/package/@magenta/image",
-      avatar : "../../assets/magenta.png"
+      avatar : "assets/magenta.png"
     } , {
       name :"angular-cli-ghpages",
       url : "https://github.com/angular-schule/angular-cli-ghpages",
-      avatar : "../../assets/github.jpg"
+      avatar : "assets/github.jpg"
     }
   ]
   constructor() {}

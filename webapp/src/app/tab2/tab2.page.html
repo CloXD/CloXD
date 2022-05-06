@@ -13,53 +13,58 @@
 
   <ion-grid>
     <ion-row>
-      <ion-col  size-md="4" size-sm="12">
+      <ion-col>
         <ion-card *ngIf="styles[current_style]; let style">
-          <img [src]="style.src" id="img_style">
+          <img [src]="style.src" id="img_style" style="min-width: 250px" />
           <ion-card-header>
             <ion-card-subtitle>{{style.subtitle}}</ion-card-subtitle>
             <ion-card-title><h3>{{style.title}}</h3></ion-card-title>
           </ion-card-header>
           <ion-card-content>
             <ion-label>Change the syle</ion-label>
-            <ion-select (ngModelChange)="refreshAll()" placeholder="Change the style" [(ngModel)]="current_style">
-              <ion-select-option *ngFor="let st of styles; let idx = index" [value]="idx">{{st.title}}</ion-select-option>
+            <ion-select
+              (ngModelChange)="refreshAll()"
+              placeholder="Change the style"
+              [(ngModel)]="current_style"
+            >
+              <ion-select-option
+                *ngFor="let st of styles; let idx = index"
+                [value]="idx"
+                >{{st.title}}</ion-select-option
+              >
             </ion-select>
           </ion-card-content>
-          <ion-card-content
-            ></ion-card-content>
+          <ion-card-content></ion-card-content>
         </ion-card>
       </ion-col>
-      <ion-col  size-md="8" size-sm="12">
-        <ion-row>
-          <ng-container
+      <ng-container
         *ngFor="let photo of photoService.photos; index as position"
       >
-        <ion-col size="6">
-          <ion-card style="height:100%">
-            <img [id]="'img_'+position" [src]="photo.webviewPath" (click)="showActionSheet(photo, position)">
+        <ion-col>
+          <ion-card>
+            <img
+              [id]="'img_'+position"
+              [src]="photo.webviewPath"
+              style="min-width: 250px"
+              (click)="showActionSheet(photo, position)"
+            />
             <ion-card-header>
-              <ion-card-title><h3>Your photo</h3></ion-card-title>
+              <ion-card-title><h3>{{loading[position] ? 'Please wait...' : 'Your photo painted by '+styles[current_style].title + '!'}}</h3></ion-card-title>
             </ion-card-header>
+            <ion-progress-bar
+              type="indeterminate"
+              *ngIf="loading[position]"
+              style="margin-top: 50%"
+            ></ion-progress-bar>
+            <canvas
+              style="min-width: 250px"
+              [id]="'stylized_'+position"
+              (click)="showActionSheet(photo, position)"
+            ></canvas>
           </ion-card>
         </ion-col>
-        <ion-col size="6">
-          <ion-card style="height:100%">
-            <ion-progress-bar type="indeterminate" *ngIf="loading[position]" style="margin-top: 50% ;"></ion-progress-bar>
-            <canvas [id]="'stylized_'+position"  (click)="showActionSheet(photo, position)"></canvas>
-            <ion-card-header>
-              <ion-card-title><h3>Restylized photo!</h3></ion-card-title>
-            </ion-card-header>
-          </ion-card>
-          
-        </ion-col>
-      </ng-container>
-          
-        </ion-row>
         
-
-      </ion-col>
-      
+      </ng-container>
     </ion-row>
   </ion-grid>
 

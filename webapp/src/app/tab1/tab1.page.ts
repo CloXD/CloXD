@@ -109,6 +109,12 @@ export class Tab1Page {
 
   works: WorkItem[] = [
     {
+      title : `<strong>PCaProfiler</strong>: the Prostate Cancer atlas Profiler`,
+      href : "https://pcaprofilertest.tk",
+      avatar : "https://pcaprofilertest.tk/assets/images/PCAprofiler_icon.png",
+      text : "the web tool that enables you to mine clinical and transcriptional data of over 1365 clinical samples across various stages. Associations with prostate cancer progression can be quantified using a quantitative pseudotime progression score. In addition, the tool also allows the annotation of new experimental and clinical data for disease progression."
+    },
+    {
       title: `<strong>iMOKA</strong>: <strong>i</strong>nteractive<strong> M</strong>ulti<strong>O</strong>bjective <strong>K</strong>-mer <strong>A</strong>nalysis`,
       href: "https://github.com/RitchieLabIGH/iMOKA",
       avatar:
@@ -129,6 +135,13 @@ export class Tab1Page {
         "assets/IRbase_bw.png",
         text : "A web application to visualize IR events and compare them between different samples."
     },
+    {
+      title: `<strong>MAGeCK_view</strong>: CRISPR screening results visualization`,
+      href: "https://cloxd.github.io/MAGeCK_view/",
+      avatar:
+        "assets/github.jpg",
+        text : "A JavaScript project to visualize the results of MAGeCK."
+    }
     
 
   ];

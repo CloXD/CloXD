@@ -3,3 +3,4 @@ plugins:
 - jekyll-remote-theme
 title: Claudio Lorenzi
 description: A simple web page to introduce myself
+logo : assets/io.png

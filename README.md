@@ -1,4 +1,4 @@
-👋 Hi, I’m @CloXD
+👋 Hi, I’m Claudio Lorenzi ( @CloXD )
 I'm a Bioinformatician, full stack software developer interested in Machine Learning and Artificial Intelligence.
 
 Visit my [webpage](https://cloxd.github.io/CloXD) to know more about me! 
